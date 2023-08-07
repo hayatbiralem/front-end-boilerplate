@@ -33,7 +33,7 @@ We also have generic component macro, if you prefer:
 {{ molecule('footer-nav', item) }}
 {{ organism('hero', { "title": "Hello World", [...]}) }}
 
-// or
+or
 
 {{ component('atom', 'button', { content: 'Hello' }) }}
 ```
