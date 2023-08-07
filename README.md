@@ -4,6 +4,10 @@
 
 `yarn serve`
 
+## Building project
+
+`yarn build`
+
 ## Macros
 
 We're using [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/)'s structure wich has three main component types named 'atom', 'molecule' and 'organism'.
@@ -26,6 +30,11 @@ We also have generic component macro, if you prefer:
 
 ```
 {{ atom('button', { content: 'Hello' }) }}
+{{ molecule('footer-nav', item) }}
+{{ organism('hero', { "title": "Hello World", [...]}) }}
+
+// or
+
 {{ component('atom', 'button', { content: 'Hello' }) }}
 ```
 
