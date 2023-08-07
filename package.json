@@ -1,0 +1,39 @@
+{
+  "name": "front-end-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eleventy:serve": "eleventy --serve",
+    "eleventy:build": "eleventy",
+    "postcss:serve": "postcss ./src/assets/styles/main.css -o ./src/assets/styles/main.build.css --watch",
+    "postcss:build": "cross-env NODE_ENV=production postcss ./src/assets/styles/main.css -o ./src/assets/styles/main.build.css",
+    "serve": "concurrently \"yarn postcss:serve\" \"yarn eleventy:serve\"",
+    "build": "rm -rf _site && yarn postcss:build && yarn eleventy:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hayatbiralem/front-end-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hayatbiralem/front-end-boilerplate/issues"
+  },
+  "homepage": "https://github.com/hayatbiralem/front-end-boilerplate#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "autoprefixer": "^10.4.12",
+    "concurrently": "^7.4.0",
+    "cross-env": "^7.0.3",
+    "cssnano": "^6.0.1",
+    "eleventy-plugin-svg-contents": "^0.7.0",
+    "postcss-cli": "^10.0.0",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {}
+}

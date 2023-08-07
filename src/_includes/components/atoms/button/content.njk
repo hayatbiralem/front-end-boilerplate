@@ -1,0 +1,29 @@
+{% if params.leftIcon %}
+  {% set leftIconClassName = 'text-inherit' %}
+
+  {% if params.leftIconClassName and "w-" not in params.leftIconClassName %}
+    {% set leftIconClassName = (leftIconClassName + ' w-5 h-5 md:w-6 md:h-6') %}
+  {% endif %}
+
+  {% if params.leftIconClassName %}
+    {% set leftIconClassName = (leftIconClassName + ' ' + params.leftIconClassName) %}
+  {% endif %}
+
+  {{ atom('icon', { name: params.leftIcon, className: leftIconClassName }) }}
+{% endif %}
+
+<span class="{{ params.innerTextClassName }}">{{ params.content }}</span>
+
+{% if params.rightIcon %}
+  {% set rightIconClassName = 'text-inherit' %}
+
+  {% if params.rightIconClassName and "w-" not in params.rightIconClassName %}
+    {% set rightIconClassName = (rightIconClassName + ' w-5 h-5 md:w-6 md:h-6') %}
+  {% endif %}
+
+  {% if params.rightIconClassName %}
+    {% set rightIconClassName = (rightIconClassName + ' ' + params.rightIconClassName) %}
+  {% endif %}
+
+  {{ atom('icon', { name: params.rightIcon, className: rightIconClassName }) }}
+{% endif %}

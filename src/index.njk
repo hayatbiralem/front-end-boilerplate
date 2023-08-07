@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+---
+
+{%- from "system/component.njk" import atom, molecule, organism with context -%}
+
+{{ organism('hero', {
+  "title": "Hello World",
+  "description": "This is a description.",
+  "buttons": [
+    {
+      "type": "primary",
+      "content": "Get started",
+      "url": "#"
+    },
+    {
+      "type": "secondary",
+      "content": "Learn more",
+      "url": "#",
+      "rightIcon": "chevron-right",
+      "rightIconClassName": "w-4 h-4"
+    }
+  ]
+}) }}

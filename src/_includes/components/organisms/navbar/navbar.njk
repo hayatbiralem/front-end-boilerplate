@@ -1,0 +1,26 @@
+<nav class="bg-gray-800 text-gray-200">
+  <div class="container py-4">
+    <div class="flex items-center gap-4">
+      <a href="/">
+        {{ atom('logo') }}
+      </a>
+
+      {{ molecule('navbar-list', {
+        items: [
+          {
+            "text": "About",
+            "href": "/"
+          },
+          {
+            "text": "Work",
+            "href": "/"
+          },
+          {
+            "text": "Contact",
+            "href": "/"
+          }
+        ]
+      }) }}
+    </div>
+  </div>
+</nav>

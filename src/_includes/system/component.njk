@@ -1,0 +1,20 @@
+{#
+  Encapsulated Eleventy/Nunjucks components with macros
+  https://www.trysmudford.com/blog/encapsulated-11ty-components/
+#}
+
+{%- macro atom(name, params) -%}
+  {% include "../components/atoms/" + name + "/" + name + ".njk" ignore missing %}
+{%- endmacro -%}
+
+{%- macro molecule(name, params) -%}
+  {% include "../components/molecules/" + name + "/" + name + ".njk" ignore missing %}
+{%- endmacro -%}
+
+{%- macro organism(name, params) -%}
+  {% include "../components/organisms/" + name + "/" + name + ".njk" ignore missing %}
+{%- endmacro -%}
+
+{%- macro component(type, name, params) -%}
+  {% include "../components/" + type + "s/" + name + "/" + name + ".njk" ignore missing %}
+{%- endmacro -%}

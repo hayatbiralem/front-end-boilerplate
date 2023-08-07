@@ -1,0 +1,8 @@
+<div class="flex flex-col gap-4 {{ params.className }}">
+  <h4 class="text-sm md:text-base font-medium">{{ params.title }}</h4>
+  <nav class="flex flex-col gap-3">
+    {% for item in params.items %}
+      {{ atom('link', item) }}
+    {% endfor %}
+  </nav>
+</div>

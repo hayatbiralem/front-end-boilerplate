@@ -1,0 +1,5 @@
+<ul class="flex gap-4">
+  {% for item in params.items %}
+    {{ atom('link', item) }}
+  {% endfor %}
+</ul>

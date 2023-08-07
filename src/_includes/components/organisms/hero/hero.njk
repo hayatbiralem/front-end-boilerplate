@@ -1,0 +1,11 @@
+<header>
+  <div class="container py-8 sm:py-16">
+    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">{{ params.title }}</h1>
+    <p class="mt-6 text-lg leading-8 text-gray-600">{{ params.description }}</p>
+    <div class="mt-10 flex items-center gap-x-6">
+      {% for item in params.buttons %}
+        {{ atom("button", item) }}
+      {% endfor %}
+    </div>
+  </div>
+</header>

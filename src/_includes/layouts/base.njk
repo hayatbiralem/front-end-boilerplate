@@ -1,0 +1,23 @@
+{%- from "system/component.njk" import atom, molecule, organism with context -%}
+<!doctype html>
+<html lang="{{ lang }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ '/assets/styles/main.build.css' | assetUrl }}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="flex flex-col w-full min-h-screen">
+      {{ organism('navbar') }}
+
+      <div class="flex-1">
+        {{ content | safe }}
+      </div>
+
+      {{ organism('footer') }}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="{{ '/assets/scripts/main.js' | assetUrl }}" defer></script>
+  </body>
+</html>

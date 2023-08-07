@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "title": "Foo",
+      "items": [
+        {
+          "text": "Bar",
+          "href": "#"
+        },
+        {
+          "text": "Baz",
+          "href": "#"
+        }
+      ]
+    },
+    {
+      "title": "Bar",
+      "items": [
+        {
+          "text": "Foo",
+          "href": "#"
+        },
+        {
+          "text": "Baz",
+          "href": "#"
+        }
+      ]
+    },
+    {
+      "title": "Baz",
+      "items": [
+        {
+          "text": "Bar",
+          "href": "#"
+        },
+        {
+          "text": "Foo",
+          "href": "#"
+        }
+      ]
+    }
+  ]
+}
