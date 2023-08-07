@@ -28,7 +28,7 @@ We also have generic component macro, if you prefer:
 
 ### Usage
 
-```
+```njk
 {{ atom('button', { content: 'Hello' }) }}
 {{ molecule('footer-nav', item) }}
 {{ organism('hero', { "title": "Hello World", [...]}) }}
