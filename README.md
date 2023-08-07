@@ -29,13 +29,13 @@ We also have generic component macro, if you prefer:
 ### Usage
 
 ```njk
-{{ atom('button', { content: 'Hello' }) }}
+{{ organism('footer', { items: footer.items }) }}
 {{ molecule('footer-nav', item) }}
-{{ organism('hero', { "title": "Hello World", [...]}) }}
+{{ atom('link', { href: '#', text: 'Learn more' }) }}
 
 or
 
-{{ component('atom', 'button', { content: 'Hello' }) }}
+{{ component('atom', 'link', { href: '#', text: 'Learn more' }) }}
 ```
 
 ## Resources

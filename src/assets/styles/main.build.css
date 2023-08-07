@@ -839,6 +839,7 @@ select {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
+
 @media (min-width: 480px) {
 
   .sm\:grid-cols-2 {
@@ -860,6 +861,7 @@ select {
     line-height: 1;
   }
 }
+
 @media (min-width: 768px) {
 
   .md\:h-6 {
@@ -932,6 +934,7 @@ select {
     background-color: rgb(64 64 64 / var(--tw-bg-opacity));
   }
 }
+
 @media (min-width: 1024px) {
 
   .lg\:grid-cols-3 {
